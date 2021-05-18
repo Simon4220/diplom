@@ -1,0 +1,71 @@
+
+.table {
+    margin: 0px 30px 0px 0px;
+    border-radius: 10px;
+    position: relative;
+    width: 1000px;
+    box-sizing: border-box;
+}
+.table__row {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+}
+.table__col {
+    width: 980px;
+    display: flex;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(99, 99, 99, 0.2);
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(179, 179, 179, 0.2);
+}
+.child__col {
+    display: flex;
+    height: 60px;
+    width: 905px;
+    margin: 20px auto 10px 85px;
+    border: 2px solid rgba(99, 99, 99, 0.2);
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(179, 179, 179, 0.2);
+}
+
+
+.col__id {
+    width: 75px;
+    text-align: center;
+    height: 100%;
+    border-right: 2px solid rgba(184, 184, 184, 0.3);
+}
+.col__id > p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(53, 53, 53, 0.9);
+}
+.col__title {
+    width: 300px;
+    text-align: center;
+    height: 100%;
+    border-right: 2px solid rgba(184, 184, 184, 0.3);
+}
+.col__title > p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(53, 53, 53, 0.9);
+}
+.col__parent {
+    width: 300px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    color: rgba(53, 53, 53, 0.9);
+    
+}
+.col__parent p {
+    margin-top: 15px;
+}
