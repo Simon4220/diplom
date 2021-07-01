@@ -103,9 +103,10 @@ class ProductController extends Controller
             'count' => 'integer|required',
             'cost' => 'integer|required',
             'thumbnail' => 'nullable|image',
-            'specifications' => 'required',
-            'description' => 'required',
-            'applications' => 'required',
+            'category_id' => 'integer|required',
+            'specifications' => 'nullable',
+            'description' => 'nullable',
+            'applications' => 'nullable',
         ]);
 
         $product = Product::find($id);

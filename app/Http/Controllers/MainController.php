@@ -25,4 +25,9 @@ class MainController extends Controller
     {
         return view('static.services2');
     }
+
+    public function oplata()
+    {
+        return view('static.oplata');
+    }
 }

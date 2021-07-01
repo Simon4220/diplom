@@ -21,6 +21,7 @@ Route::group(['middleware' => 'user'], function () {
     Route::get('/', 'MainController@index')->name('home');
     Route::get('/resheniya-i-uslugi', 'MainController@services')->name('services');
     Route::get('/produkty-i-servisy', 'MainController@secondServices')->name('secondServices');
+    Route::get('/oplata-i-dostavka', 'MainController@oplata')->name('oplata');
     Route::get('/cart', 'CartController@index')->name('cart');
     Route::get('/contacts', 'ContactController@index')->name('contact');
     Route::post('/send-mail', 'MailController@sendEmail')->name('send-mail');

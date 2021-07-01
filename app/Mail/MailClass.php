@@ -28,16 +28,10 @@ class MailClass extends Mailable
         $this->email = $email;
         $this->text = $text;
     }
-
-    /**
-     * Build the message.
-     *
-     * @return $this
-     */
+    
     public function build()
     {
-        return $this->from($this->email)
-        ->view('mail.mail')
+        return $this->view('mail.mail')
         ->with([
             'name' => $this->name,
             'phone' => $this->phone,

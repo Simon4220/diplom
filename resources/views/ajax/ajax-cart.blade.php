@@ -46,9 +46,6 @@
         <div class="elem-sum">
             <p id="{{ $product->id }}" data-sum="" data-price="{{\Cart::get($product->id)->getPriceSum()}}">{{\Cart::get($product->id)->getPriceSum()}} ₽</p>
         </div>
-        <div class="process-delete">
-            <p>Удаление...</p>
-        </div>
     </div>
     @endforeach
     @else
@@ -79,7 +76,11 @@
 
     </div>
     <div class="buttons">
-        <a href="" class="continue">Продолжить покупки</a>
-        <a href="" class="pay">Оформить заказ</a>
+        <a href="{{ route('catalog') }}" class="continue">Продолжить покупки</a>
+        @if((\Cart::session($_COOKIE['cart_id'])->getContent()->count()) && ( \Cart::getSubTotal() >= 500))
+        <a href="{{ route('order') }}" class="pay">Оформить заказ</a>
+        @else
+        <p style="width:100%; font-size:18px; padding: 10px 40px 0px 40px; text-align:center; font-weight:500;">Минимальная сумма заказа 500руб.</p>
+        @endif
     </div>
 </div>

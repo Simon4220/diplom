@@ -18,6 +18,7 @@ main {
 }
 .map {
     width: 100vw;
+    height: 700px;
 }
 .map > img {
     width: 100%;

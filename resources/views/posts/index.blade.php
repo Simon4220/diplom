@@ -20,7 +20,7 @@
                     <p>{{ $post->getPostDate() }}</p>
                 </div>
                 <div class="blog-title">
-                    <p>Расширенная поддержка NFC на iPhone в iOS 13</p>
+                    <p>{{ $post->title }}</p>
                 </div>
             </div>
             @endforeach

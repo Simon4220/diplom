@@ -37,6 +37,7 @@ class OrderController extends Controller
             $userId = 'unknown';
         }
         $cart = \Cart::session($_COOKIE['cart_id']);
+
         $products = $cart->getContent();
         foreach ($products as $product) {
             $item = Product::where('id', $product->id)->first();
@@ -48,6 +49,7 @@ class OrderController extends Controller
                 return redirect()->back()->with('error', 'У продукта '.$product->title.' превышен лимит для заказа');
             }
         }
+        
         $products = serialize($products);
         $sum = $cart->getSubTotal();
         $data = serialize($request->all());

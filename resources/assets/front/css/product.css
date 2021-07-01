@@ -137,7 +137,7 @@
     display: flex;
     position: relative;
     height: max-content;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
 }
 .description-option .cost {

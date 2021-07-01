@@ -10,18 +10,18 @@
                 @csrf
                 <div class="to-update-data">
                     <label for="">ФИО</label>
-                    <input type="text" name="name" id="name" required class="user-input" value="{{ Auth::user()->name }}" placeholder="Введите Ваше ФИО">
+                    <input type="text" name="name" id="name" class="user-input" value="{{ Auth::user()->name }}" placeholder="Введите Ваше ФИО">
                     <label for="">Номер телефона</label>
-                    <input type="text" name="phone" id="phone" required class="user-input" value="{{ Auth::user()->phone }}" placeholder="Введите номер телефона">
+                    <input type="text" name="phone" id="phone" class="user-input" value="{{ Auth::user()->phone }}" placeholder="Введите номер телефона">
                     <label for="">E-mail</label>
-                    <input type="email" name="email" id="email" required class="user-input" value="{{ Auth::user()->email }}" placeholder="Введите e-mail">
+                    <input type="email" name="email" id="email"  class="user-input" value="{{ Auth::user()->email }}" placeholder="Введите e-mail">
                     <input type="submit" class="cabinet-submit" value="Сохранить данные">
                 </div>
                 <div class="div">
                     <label for="">Город</label>
-                    <input type="text" name="city" id="city" required class="user-input" value="{{ Auth::user()->city }}" placeholder="Введите свой город">
+                    <input type="text" name="city" id="city"class="user-input" value="{{ Auth::user()->city }}" placeholder="Введите свой город">
                     <label for="">Адрес</label>
-                    <input type="text" name="adress" id="adress" required class="user-input" value="{{ Auth::user()->adress }}" placeholder="Введите свой адрес">
+                    <input type="text" name="adress" id="adress" class="user-input" value="{{ Auth::user()->adress }}" placeholder="Введите свой адрес">
                     @if(session()->has('success'))
                     <p class="data-success">
                         {{ session('success') }}

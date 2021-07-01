@@ -96,7 +96,12 @@
         @foreach($products as $product)
         <div class="recomended__elem">
             <div class="image">
-                <img src="{{ $product->getImage() }}" alt="">
+            <a href="{{ route('product.show', [
+                                'category' => $product->category->slug,
+                                'slug' => $product->slug
+                            ]) }}"><img src="{{ $product->getImage() }}" alt="">
+            </a>
+                
             </div>
             <div class="title">
                 <p>{{ $product->title }}</p>

@@ -29,13 +29,13 @@ header {
 .bi-telephone {
     position: absolute;
     top: 15px;
-    left: 17%;
+    left: 13%;
     color: rgba(153, 153, 153, 1);
 }
 .bi-envelope {
     position: absolute;
     top: 14px;
-    left: 20%;
+    left: 16%;
     color: rgba(153, 153, 153, 1);
 }
 .info p {
@@ -131,8 +131,8 @@ header {
 }
 .bi-person-fill {
     position: absolute;
-    top: 13px;
-    left: 55px;
+    top: 12px;
+    left: 50px;
 }
 .menu, .menu .container {
     height: 140px;

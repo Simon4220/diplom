@@ -11,7 +11,6 @@ class CartController extends Controller
     public function index()
     {
         $products = \Cart::session($_COOKIE['cart_id'])->getContent();
-        //dd($products);
         return view('cart.index', compact('products'));
     }
 

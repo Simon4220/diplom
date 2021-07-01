@@ -39,7 +39,7 @@ class ProductController extends Controller
         $category = Category::where('slug', $categorySlug)->first();
         if(count($category->categories)) {
             $categories = Category::where('category_id', $category->id)->pluck('id')->all();
-            $products = Product::where('category_id', $categories)->get();
+            $products = Product::whereIn('category_id', $categories)->get();
         } else {
             $products = Product::where('category_id', $category->id)->get();
         }

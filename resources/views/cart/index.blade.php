@@ -229,7 +229,7 @@
                     @if((\Cart::session($_COOKIE['cart_id'])->getContent()->count()) && ( \Cart::getSubTotal() >= 500))
                     <a href="{{ route('order') }}" class="pay">Оформить заказ</a>
                     @else
-                    <p style="width:100%; font-size:18px; padding: 10px 40px 0px 40px; text-align:center; font-weight:500;">Минимальная сумма заказа 500руб.</p>
+                    <p style="width:100%; font-size:16px; padding: 10px 40px 0px 40px; text-align:center; font-weight:500;">Минимальная сумма заказа 500руб.</p>
                     @endif
                 </div>
             </div>

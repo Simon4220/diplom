@@ -477,13 +477,13 @@ header {
 .bi-telephone {
     position: absolute;
     top: 15px;
-    left: 17%;
+    left: 13%;
     color: rgba(153, 153, 153, 1);
 }
 .bi-envelope {
     position: absolute;
     top: 14px;
-    left: 20%;
+    left: 16%;
     color: rgba(153, 153, 153, 1);
 }
 .info p {
@@ -579,8 +579,8 @@ header {
 }
 .bi-person-fill {
     position: absolute;
-    top: 13px;
-    left: 55px;
+    top: 12px;
+    left: 50px;
 }
 .menu, .menu .container {
     height: 140px;
@@ -1050,7 +1050,7 @@ footer {
     margin-bottom: 4px;
 }
 .addToCart {
-    width: 160px;
+    width: 140px;
     margin: 0px auto;
     height: 50px;
     border-radius: 50px;
@@ -1127,11 +1127,13 @@ footer {
     position: absolute;
     height: 100%;
     width: 80%;
-    padding: 20px 0px 0px 80px;
+    padding: 0px 0px 0px 80px;
     left: 0;
     top: 0;
     text-decoration: none;
     color: rgba(50, 50, 50, 1);
+    display: flex;
+    align-items: center;
 }
 .category_elem > p > a:hover {
     text-decoration: none;
@@ -1368,7 +1370,7 @@ footer {
     display: flex;
     position: relative;
     height: max-content;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
 }
 .description-option .cost {
@@ -1818,7 +1820,7 @@ footer {
     border: 3px solid #1fc7b1;
     top: -3px;
     z-index: 2;
-    left: -8px;
+    left: -14px;
 }
 .update-count {
     z-index: 1;
@@ -6923,6 +6925,7 @@ main {
 }
 .map {
     width: 100vw;
+    height: 700px;
 }
 .map > img {
     width: 100%;
@@ -7379,7 +7382,7 @@ main {
 }
 .blog-element {
     width: 30%;
-    height: 330px;
+    height: 400px;
     margin: 0px 1.5%;
 }
 .previe {
@@ -7389,10 +7392,12 @@ main {
 .previe > a {
     width: 100%;
     height: 210px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
 }
 .previe > a > img {
-    width: 100%;
     height: 100%;
     border-radius: 10px;
 }
@@ -7440,7 +7445,6 @@ figure.table > table {
     height: 335px;
 }
 .post-image > img {
-    width: 100%;
     height: 100%;
     border-radius: 10px;
 }
